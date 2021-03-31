@@ -1,0 +1,5 @@
+c cpp_internal_int_to_double_convert -CppSimModules- (cppsim)
+c cpp_internal_double_to_int_convert -CppSimModules- (cppsim)
+c cpp_internal_double_to_bool_convert -CppSimModules- (cppsim)
+c cpp_internal_double_interp_to_bool_convert -CppSimModules- (cppsim)
+c cpp_internal_bool_to_double_interp_convert -CppSimModules- (cppsim)

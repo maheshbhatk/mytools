@@ -1,0 +1,13 @@
+***** Spice Netlist for Cell 'nand' *****
+
+************** Module nand **************
+m0 vout vina n0 gnd cmosn w='1.0u' l='0.13u' m='1' geo='0' 
+m1 n0 vinb gnd gnd cmosn w='1.0u' l='0.13u' m='1' geo='0' 
+m2 vout vina vdd vdd cmosp w='1.0u' l='0.13u' m='1' geo='0' 
+m3 vout vinb vdd vdd cmosp w='1.0u' l='0.13u' m='1' geo='0' 
+v0 vina gnd pulse 0 1.3v 0ns 200ps 200ps 2ns 4ns 
+v1 vinb gnd pulse 0 1.3v 0ns 200ps 200ps 3ns 6ns 
+
+
+.end
+

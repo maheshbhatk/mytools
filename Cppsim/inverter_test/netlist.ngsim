@@ -1,0 +1,11 @@
+***** Spice Netlist for Cell 'inverter_test' *****
+
+************** Module inverter_test **************
+m0 vouta vin gnd gnd cmosn w='1.0u' l='0.13u' m='1' geo='0' 
+m1 vouta vin vdd vdd cmosp w='2.0u' l='0.13u' m='1' geo='0' 
+v0 vin gnd pulse 0 1.3v 0ns 200ps 200ps 3ns 6ns 
+c0 gnd vouta 1000f 
+
+
+.end
+

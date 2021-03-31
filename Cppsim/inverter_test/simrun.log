@@ -1,0 +1,53 @@
+
+Circuit: ***** spice netlist for cell 'inverter_test' *****
+
+binary raw file "simrun.raw"
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: v0: no DC value, transient time 0 value used
+No. of Data Columns : 13  
+
+No. of Data Rows : 1
+No. of Data Columns : 14  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vouta                                  1.29999
+vin                                          0
+vdd                                        1.3
+vsup#branch                       -2.77451e-08
+v0#branch                          1.36639e-09
+
+
+No. of Data Rows : 8089
+
+Total analysis time (seconds) = 0.212
+
+Total elapsed time (seconds) = 0.286 
+
+Total DRAM available = 16249.129 MB.
+DRAM currently available = 9663.125 MB.
+Total ngspice program size =   13.379 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      vouta = 1.300e+000
+                      vin = 0.000e+000
+                      vdd = 1.300e+000
+                      m1#gate = 7.007e-011
+                      m1#dbody = 1.300e+000
+                      m1#body = 1.300e+000
+                      m1#sbody = 1.300e+000
+                      m0#gate = 2.568e-009
+                      m0#dbody = 1.542e-011
+                      m0#body = 1.134e-011
+                      m0#sbody = 5.668e-012
+                      i_vsup = -2.775e-008
+                      i_v0 = 1.366e-009
+
+***************** End of Operating Point Values ******************

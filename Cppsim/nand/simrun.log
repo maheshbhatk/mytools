@@ -1,0 +1,70 @@
+
+Circuit: ***** spice netlist for cell 'nand' *****
+
+binary raw file "simrun.raw"
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: v1: no DC value, transient time 0 value used
+Warning: v0: no DC value, transient time 0 value used
+No. of Data Columns : 24  
+
+No. of Data Rows : 1
+No. of Data Columns : 25  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vout                                       1.3
+vina                                         0
+n0                                   0.0709829
+vinb                                         0
+vdd                                        1.3
+vsup#branch                       -3.26438e-09
+v1#branch                          9.16347e-12
+v0#branch                          1.35727e-09
+
+
+No. of Data Rows : 10215
+
+Total analysis time (seconds) = 0.34
+
+Total elapsed time (seconds) = 0.414 
+
+Total DRAM available = 16249.129 MB.
+DRAM currently available = 9674.758 MB.
+Total ngspice program size =   13.402 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      vout = 1.300e+000
+                      vina = 0.000e+000
+                      n0 = 7.098e-002
+                      vinb = 0.000e+000
+                      vdd = 1.300e+000
+                      m3#gate = 1.743e-011
+                      m3#dbody = 1.300e+000
+                      m3#body = 1.300e+000
+                      m3#sbody = 1.300e+000
+                      m2#gate = 1.743e-011
+                      m2#dbody = 1.300e+000
+                      m2#body = 1.300e+000
+                      m2#sbody = 1.300e+000
+                      m1#gate = 2.493e-014
+                      m1#dbody = 6.000e-013
+                      m1#body = 1.333e-013
+                      m1#sbody = 6.667e-014
+                      m0#gate = 2.568e-009
+                      m0#dbody = 1.112e-011
+                      m0#body = 2.744e-012
+                      m0#sbody = 1.905e-012
+                      i_vsup = -3.264e-009
+                      i_v1 = 9.163e-012
+                      i_v0 = 1.357e-009
+
+***************** End of Operating Point Values ******************
