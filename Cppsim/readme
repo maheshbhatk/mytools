@@ -1,0 +1,19 @@
+USER MANUAL for my reference to use this
+
+First Download the Cppsim in Windows. (https://www.cppsim.com/download.html)
+Install it.
+You will get the 4 Desktop icons.(CppsimView,Sue2,PllDesign,GTKwave)
+Open Sue2 shortcut. (Sue- Schematic User Environment?)
+
+1) Create a Library- Tools->Library Manager-> Library Operations->Create-> Name the lib and then click Ok and restart the Sue2.
+2) Click on the bar in the right side and navigate to the library created before. 
+3) Double click and open the schematic; Save as to create copies.
+4) Draw the inverter (any design) and save.
+  - Tips in Schematic: In the right side boxes, open Spice for nmos,pmos,pulse models. Open Devices for Global(Vdd,gnd), naming the nets, input,output pins.
+5) Tools-> NGSpice Simulation. 
+6) Click on Edit Sim File to do changes such as runtime. Check the Vdd supply voltage,(Usually 1.3V for 130nm), temp.
+7) Click on Netlist only, Netlist/HSPC, Netlist/HSPC/NGSpice. (Each buttons)
+8) Now go to icons and click on CppsimView shortcut.
+9) In the new window opened, click on hspc file, then simrun.raw, then nodes. (the radio buttons on the top)
+10) In nodes, double click on the nodes where u want to see the signals. Thw signals will be ploted in separate window.
+11) (Under plotsig... you can change the form of scale(like log,db scale) of the signals if you wish so.)
