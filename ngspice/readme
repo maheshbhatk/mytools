@@ -1,0 +1,8 @@
+Downloading:
+http://ngspice.sourceforge.net/download.html
+(Source:https://sourceforge.net/projects/ngspice/files/ng-spice-rework/34/)
+Download and extract it.
+
+To open the ngspice- Go to bin->ngspice.exe
+
+To open a circuit-> first change the directory in ngspice by using cd command.
