@@ -6,3 +6,7 @@ Download and extract it.
 To open the ngspice- Go to bin->ngspice.exe
 
 To open a circuit-> first change the directory in ngspice by using cd command.
+Commands to run:
+source <filename>.cir
+run
+display
