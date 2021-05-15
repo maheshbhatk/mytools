@@ -10,3 +10,4 @@ Commands to run:
 source <filename>.cir
 run
 display
+setplot
