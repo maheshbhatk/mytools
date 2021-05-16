@@ -1,0 +1,27 @@
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. 
+http://www.clifford.at/yosys/
+
+Go to the proper directory.
+commands:
+more <filename>.v           // It will show the code written.
+yosys                       // Opening yosys
+read_verilog <filename>.v   //reading the verilog file
+show <modulename>           //Graphviz Representation of design. If more than 1 module in verilog file. choose whichever module to see.
+
+read_verilog -nolatches <filename>.v    //This is better
+show <modulename>
+show -stretch <modulename>   // inputs on left, output on right
+
+proc proc_dff           //identifies flip-flops in the processes and converts them to d-type flip-flop cells
+proc proc_arst          //identifies asynchronous resets in the processes and converts them to a different internal representation
+opt_muxtree             //Identifies and removes this dead branches from the multiplexer trees...OPTIMIZATION
+opt_clean               //Removes useless wires
+
+//mapping
+techmap                 //Implements a very simple technology mapper that replaces the cell in the design with implementations given in form of Verilog
+write_verilog test1.v   //we can go and check the mapping here.
+dfflibmap -liberty /home/mbk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_100C_1v65.lib   //obtain path using pwd command
+abc -liberty /home/mbk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_100C_1v65.lib         //sky130_fd_sc_hd__ss_100C_1v40.lib -worst condition lib
+//ABC tool for technology mapping of yosys’s internal gate library to a target architecture
+clean       //optimize
+write_verilog <post_synth>.v  //check the mapping to the sky lib
