@@ -1,0 +1,25 @@
+Installation as given in https://github.com/The-OpenROAD-Project/OpenSTA
+
+git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
+cd OpenSTA
+mkdir build
+cd build
+cmake ..
+make
+
+app/sta is the main thing which runs everything.
+To open OpenSTA: Go to the file with .v file and .lib file  and run ../../app/sta to open OpenSTA //<pwd to sta>
+//check out examples file, tcl files. 
+
+Commands inside OpenSTA:
+
+read_liberty <sky130lib>.lib
+read_verilog <filename>.v
+link_design <topmodulename> //without .v
+read_sdf example1.sdf	//constraints file it is
+create_clock -name clk -period 10 {clk1 clk2 clk3} //the no of clocks in the design
+set_input_delay -clock clk 0 {in1 in2}
+report_checks
+
+running each line above, which was on tcl file exanple in opensta.
+if it replies 1, means good to go.
